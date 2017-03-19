@@ -334,8 +334,8 @@ header .sp_menu_li {
       margin: 20px 0 20px 0; } }
   @media (max-width: 550px) {
     .main #contents .display {
-      max-width: 100%;
-      max-height: 300px; }
+      width: 100%;
+      height: auto; }
     .main #contents #thumbnail {
       margin: 0 auto; }
     .main #contents #list_img {
@@ -555,19 +555,19 @@ header .sp_menu_li {
     height: 72px;
     max-width: 100%;
     display: block;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    position: relative; }
     #sidebar #sp_search form, #sidebar #sp_search input {
       margin: 0;
       /* マージンをリセット */ }
     #sidebar #sp_search form {
-      position: relative;
       /* 基準位置とする */ }
     #sidebar #sp_search input[type="search"] {
       background-color: #eeeeee;
       border-style: none;
       height: 30px;
       /* 高さ40px */
-      width: 248px;
+      width: 85%;
       -webkit-border-radius: 0px;
       -moz-border-radius: 0px;
       -o-border-radius: 0px;
@@ -577,7 +577,7 @@ header .sp_menu_li {
       margin: 7px;
       position: absolute;
       /* 絶対配置 */
-      top: 70px;
+      top: 0%;
       left: 0;
       right: 0;
       bottom: 0;
@@ -592,9 +592,8 @@ header .sp_menu_li {
       /* 高さ16px */
       position: absolute;
       /* 絶対配置 */
-      left: 240px;
-      /* 左から170px */
-      top: 25px; }
+      left: 83%;
+      top: 28px; }
     #sidebar #sp_search ::-webkit-input-placeholder {
       font-style: italic;
       font-size: 1.3rem;

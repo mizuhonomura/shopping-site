@@ -546,8 +546,8 @@ header{
     
     @media  (max-width: 550px) {
       .display {
-        max-width: 100%;
-        max-height: 300px;
+        width: 100%;
+        height: auto;
       }
       #thumbnail {
         margin: 0 auto;
@@ -851,18 +851,19 @@ header{
          max-width: 100%;
          display: block;
          margin-bottom: 10px;
+         position: relative;
          
         form, input {
           margin: 0; /* マージンをリセット */
         }
         form {
-          position: relative; /* 基準位置とする */
+           /* 基準位置とする */
         }
         input[type="search"] {
           background-color: #eeeeee;
           border-style: none;
           height: 30px; /* 高さ40px */
-          width: 248px;
+          width: 85%;
           -webkit-border-radius:0px;
           	-moz-border-radius:0px;
           	-o-border-radius:0px;
@@ -871,7 +872,7 @@ header{
           padding: 0px; 
           margin: 7px;
           position: absolute; /* 絶対配置 */
-          top: 70px;
+          top: 0%;
           left: 0;
           right: 0;
           bottom: 0;
@@ -884,8 +885,8 @@ header{
           width: 16px;
           height: 16px; /* 高さ16px */
           position: absolute; /* 絶対配置 */
-          left: 240px; /* 左から170px */
-          top: 25px;
+          left: 83%;
+          top: 28px;
         }
         
         ::-webkit-input-placeholder {
