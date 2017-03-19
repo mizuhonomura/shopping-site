@@ -3,7 +3,7 @@
   <head>
 
     <meta charset="utf-8">
-    <title></title>
+    <title>APPLE BERRY</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -16,7 +16,14 @@
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="icon" type="image/png" href="images/favicon.png">
-
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="carousel.js"></script>
   </head>
   <body>
       
@@ -73,8 +80,11 @@
               <div class="nine columns">
                 <div class="main">
                   
-                  <div id="cover_area">
-                    <img class="u-max-full-width" src="images/top/ca_banner.jpg" alt=""  />
+                  <div id="cover_area" class="owl-carousel owl-theme">
+                    <div><img class="u-max-full-width" src="images/top/ca_banner.jpg" alt=""  /></div>
+                    <div><img class="u-max-full-width" src="images/top/ca_banner.jpg" alt=""  /></div>
+                    <div><img class="u-max-full-width" src="images/top/ca_banner.jpg" alt=""  /></div>
+                    <div><img class="u-max-full-width" src="images/top/ca_banner.jpg" alt=""  /></div>
                   </div>
                   <!-- #cover_area -->
                   
@@ -85,7 +95,7 @@
                     <div class="sp_new_title"> 
                       <img class="u-max-full-width"  src="images/top_sp/title_new_item.png" alt="" srcset="images/top_sp/title_new_item@2x.png 2x" />
                     </div>
-                    <div class="item">
+                    <div class="item clearfix">
                       <a href="products.html"><div class="items">
                         <img class=" center u-max-full-width" src="images/top/item_01.jpg" alt="" />
                         <p>商品名が入ります商品名が入ります商品名が入ります</p>
@@ -128,7 +138,7 @@
                       <img class="u-max-full-width"  src="images/top_sp/title_popular.png" alt="" srcset="images/top_sp/title_popular@2x.png 2x" />
                     </div>
                     
-                    <div class="item">
+                    <div class="item clearfix">
                       <a href="products.html"><div class="items">
                         <img class="center u-max-full-width" src="images/top/item_07.jpg" alt="" />
                         <p>商品名が入ります商品名が入ります商品名が入ります</p>
@@ -211,33 +221,33 @@
                     <img class="itemserch"  src="images/top/itemserch.png" alt="" />
                     <form>
                       <input type="search" placeholder="Search..." name="search" value="" class="text">
-                      <input type="image" src="images/top/search_icon.png">
+                      <input type="image" src="images/top/search_icon.png" alt="検索">
                     </form>
                   </div>
                   <div id="sp_search">
                     <form>
                       <input type="search" placeholder="Search..." name="search" value="" class="text">
-                      <input type="image" src="images/top/search_icon.png">
+                      <input type="image" src="images/top/search_icon.png" alt="検索">
                     </form>
                   </div>
                   
                   <a href="#"><div id="pagelink">
-                    <div class="title"></div></a>
-                  </div>
+                    <div class="title"></div>
+                  </div></a>
                   
                   <a href="#">
                     <div id="categories">
-                      <div class="title"></div></a>
-                    </div>
+                      <div class="title"></div>
+                    </div></a>
                     
                   <div class="categories_menu">
                     <ul>
-                      <a href="#"><li>カテゴリー名</li></a>
-                      <a href="#"><li>カテゴリー名</li></a>
-                      <a href="#"><li>カテゴリー名</li></a>
-                      <a href="#"><li>カテゴリー名</li></a>
-                      <a href="#"><li>カテゴリー名</li></a>
-                      <a href="#"><li>カテゴリー名</li></a>
+                      <li><a href="#">カテゴリー名</a></li>
+                      <li><a href="#">カテゴリー名</a></li>
+                      <li><a href="#">カテゴリー名</a></li>
+                      <li><a href="#">カテゴリー名</a></li>
+                      <li><a href="#">カテゴリー名</a></li>
+                      <li><a href="#">カテゴリー名</a></li>
                     </ul>
                   </div>
                     
@@ -246,15 +256,17 @@
                     <div id="about_title">
                       <div class="title"></div>
                     </div>
-                    <div class="box1">
-                      <img class="about_image" src="images/top/about_img.jpg" alt="" />
-                    </div>
-                    <div class="box2">
-                      <p>お店の説明お店の説明お店の説明が入りますお店の説明お店の説明お店の説明</p>
-                      <div class="more">
-                        <a href="#"><img src="images/top/more_btn.png" alt="" /></a>
+                    <div class="clearfix">
+                      <div class="box1">
+                        <img class="about_image" src="images/top/about_img.jpg" alt="" />
                       </div>
-                      <a href="#"><div class="more_sp">MORE</div></a>
+                      <div class="box2">
+                        <p>お店の説明お店の説明お店の説明が入りますお店の説明お店の説明お店の説明</p>
+                        <div class="more">
+                          <a href="#"><img src="images/top/more_btn.png" alt="" /></a>
+                        </div>
+                        <a href="#"><div class="more_sp">MORE</div></a>
+                      </div>
                     </div>
                   </div>
                   
@@ -262,16 +274,18 @@
                     <div id="shopinfo_title">
                      <div class="title"></div>
                     </div>
-                    <div class="box1">
-                      <img class="shopinfo_image" src="images/top/shopinfo_img.jpg" alt="" />
-                    </div>
-                      <div class="box2">
-                      <p>お店の説明お店の説明お店の説明が入りますお店の説明お店の説明お店の説明</p>
-                      <div class="more">
-                        <a href="#"><img src="images/top/more_btn.png" alt="" /></a>
+                    <div class="clearfix">
+                      <div class="box1">
+                        <img class="shopinfo_image" src="images/top/shopinfo_img.jpg" alt="" />
                       </div>
-                      <a href="#"><div class="more_sp">MORE</div></a>
-                    </div>
+                      <div class="box2">
+                        <p>お店の説明お店の説明お店の説明が入りますお店の説明お店の説明お店の説明</p>
+                        <div class="more">
+                          <a href="#"><img src="images/top/more_btn.png" alt="" /></a>
+                        </div>
+                        <a href="#"><div class="more_sp">MORE</div></a>
+                      </div>
+                    </div>  
                   </div>
                 
                 </div>
@@ -307,8 +321,7 @@
           <!-- container -->
         </div>
         <!-- footer -->
-              
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
   
   <script>
     $(function(){
@@ -321,7 +334,6 @@
       });
     });
   </script>
-
-</body>            
+           
   </body>
 </html>

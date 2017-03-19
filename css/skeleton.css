@@ -158,9 +158,9 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: #000000; }
 a:hover {
-  color: #0FA0CE; }
+  color: #000000; }
 
 
 /* Buttons
@@ -271,6 +271,7 @@ select:focus {
 label,
 legend {
   display: block;
+  margin-top: 10px;
   margin-bottom: .5rem;
   font-weight: 600; }
 fieldset {
@@ -278,9 +279,9 @@ fieldset {
   border-width: 0; }
 input[type="checkbox"],
 input[type="radio"] {
-  display: inline; }
+  display: none; }
 label > .label-body {
-  display: inline-block;
+  display: block;
   margin-left: .5rem;
   font-weight: normal; }
 

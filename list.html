@@ -3,7 +3,7 @@
   <head>
 
     <meta charset="utf-8">
-    <title></title>
+    <title>LIST</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -75,8 +75,8 @@
                   <div id="pannkuzu">
                     <nav>
                       <p>
-                        <a href="index.html" rel="index up up up"><img class="home u-max-full-width" src="images/list/home_icon.png" alt=""  />  HOME</a> /
-                        <a href="/products/" rel="up up">カテゴリー名</a> 
+                        <a href="index.html"><img class="home u-max-full-width" src="images/list/home_icon.png" alt=""  />  HOME</a> /
+                        <a href="/products/">カテゴリー名</a> 
                       </p>
                     </nav>
                   </div>
@@ -152,7 +152,7 @@
                       <div class="sp_recent_title"> 
                         <img class="u-max-full-width"  src="images/list/title_recent_pro.png" alt="" srcset="images/list/title_recent_pro@2x.png 2x" />
                       </div>
-                      <div class="item">
+                      <div class="item clearfix">
                           <a href="products.html"><div class="items">
                           <img class=" center u-max-full-width" src="images/top/item_07.jpg" alt="" />
                           <p>商品名が入ります商品名が入ります商品名が入ります</p>
@@ -219,33 +219,33 @@
                     <img class="itemserch"  src="images/top/itemserch.png" alt="" />
                     <form>
                       <input type="search" placeholder="Search..." name="search" value="" class="text">
-                      <input type="image" src="images/top/search_icon.png">
+                      <input type="image" src="images/top/search_icon.png" alt="検索">
                     </form>
                   </div>
                   <div id="sp_search">
                     <form>
                       <input type="search" placeholder="Search..." name="search" value="" class="text">
-                      <input type="image" src="images/top/search_icon.png">
+                      <input type="image" src="images/top/search_icon.png" alt="検索">
                     </form>
                   </div>
                   
                   <a href="#"><div id="pagelink">
-                    <div class="title"></div></a>
-                  </div>
+                    <div class="title"></div>
+                  </div></a>
                   
                   <a href="#">
                     <div id="categories">
-                      <div class="title"></div></a>
-                    </div>
+                      <div class="title"></div>
+                    </div></a>
                     
                   <div class="categories_menu">
                     <ul>
-                      <a href="#"><li>カテゴリー名</li></a>
-                      <a href="#"><li>カテゴリー名</li></a>
-                      <a href="#"><li>カテゴリー名</li></a>
-                      <a href="#"><li>カテゴリー名</li></a>
-                      <a href="#"><li>カテゴリー名</li></a>
-                      <a href="#"><li>カテゴリー名</li></a>
+                      <li><a href="#">カテゴリー名</a></li>
+                      <li><a href="#">カテゴリー名</a></li>
+                      <li><a href="#">カテゴリー名</a></li>
+                      <li><a href="#">カテゴリー名</a></li>
+                      <li><a href="#">カテゴリー名</a></li>
+                      <li><a href="#">カテゴリー名</a></li>
                     </ul>
                   </div>
                     
@@ -254,15 +254,17 @@
                     <div id="about_title">
                       <div class="title"></div>
                     </div>
-                    <div class="box1">
-                      <img class="about_image" src="images/top/about_img.jpg" alt="" />
-                    </div>
-                    <div class="box2">
-                      <p>お店の説明お店の説明お店の説明が入りますお店の説明お店の説明お店の説明</p>
-                      <div class="more">
-                        <a href="#"><img src="images/top/more_btn.png" alt="" /></a>
+                    <div class="clearfix">
+                      <div class="box1">
+                        <img class="about_image" src="images/top/about_img.jpg" alt="" />
                       </div>
-                      <a href="#"><div class="more_sp">MORE</div></a>
+                      <div class="box2">
+                        <p>お店の説明お店の説明お店の説明が入りますお店の説明お店の説明お店の説明</p>
+                        <div class="more">
+                          <a href="#"><img src="images/top/more_btn.png" alt="" /></a>
+                        </div>
+                        <a href="#"><div class="more_sp">MORE</div></a>
+                      </div>
                     </div>
                   </div>
                   
@@ -270,16 +272,18 @@
                     <div id="shopinfo_title">
                      <div class="title"></div>
                     </div>
-                    <div class="box1">
-                      <img class="shopinfo_image" src="images/top/shopinfo_img.jpg" alt="" />
-                    </div>
-                      <div class="box2">
-                      <p>お店の説明お店の説明お店の説明が入りますお店の説明お店の説明お店の説明</p>
-                      <div class="more">
-                        <a href="#"><img src="images/top/more_btn.png" alt="" /></a>
+                    <div class="clearfix">
+                      <div class="box1">
+                        <img class="shopinfo_image" src="images/top/shopinfo_img.jpg" alt="" />
                       </div>
-                      <a href="#"><div class="more_sp">MORE</div></a>
-                    </div>
+                      <div class="box2">
+                        <p>お店の説明お店の説明お店の説明が入りますお店の説明お店の説明お店の説明</p>
+                        <div class="more">
+                          <a href="#"><img src="images/top/more_btn.png" alt="" /></a>
+                        </div>
+                        <a href="#"><div class="more_sp">MORE</div></a>
+                      </div>
+                    </div>  
                   </div>
                 
                 </div>
@@ -331,18 +335,6 @@
       </script>
 
       
-      <script>        
-        var $item = $('.item'),   
-            emptyCells = [],
-            i;
-        
-        // 子パネル (ul.item) の数だけ空の子パネル (ul.item.is-empty) を追加する。
-        for (i = 0; i < $item.find('.item').length; i++) {
-            emptyCells.push($('<ul>', { class: 'item is-empty' }));
-        }
-        
-        $item.append(emptyCells);  
-      </script>
-      
+
   </body>
 </html>
