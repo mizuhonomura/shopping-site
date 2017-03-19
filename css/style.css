@@ -339,7 +339,10 @@ header .sp_menu_li {
     .main #contents #thumbnail {
       margin: 0 auto; }
     .main #contents #list_img {
-      line-height: 1; }
+      line-height: 1;
+      padding: 0;
+      margin: 0 auto;
+      text-align: center; }
     .main #contents li {
       list-style: none;
       display: inline-block;
@@ -351,6 +354,26 @@ header .sp_menu_li {
       margin: 0px;
       cursor: pointer; } }
   @media (min-width: 550px) {
+    .main #contents .display {
+      width: 100%;
+      height: auto; }
+    .main #contents #thumbnail {
+      margin: 0 auto; }
+    .main #contents #list_img {
+      line-height: 1;
+      padding: 0;
+      margin: 0 auto; }
+    .main #contents li {
+      list-style: none;
+      display: inline-block;
+      line-height: 1rem;
+      margin: 0px; }
+    .main #contents li img {
+      width: 75px;
+      height: 75px;
+      margin: 0px;
+      cursor: pointer; } }
+  @media (min-width: 1200px) {
     .main #contents .clearfix:after {
       display: block;
       clear: both;
@@ -358,14 +381,14 @@ header .sp_menu_li {
       visibility: hidden;
       content: "."; }
     .main #contents #display_img {
-      width: 410px;
-      height: 410px;
+      width: 70%;
+      height: auto;
       float: left; }
     .main #contents #thumbnail {
       float: right;
       width: 30%; }
-    .main #contents ul {
-      padding: 0;
+    .main #contents #list_img {
+      padding: 0 0 0 15px;
       margin-bottom: 0; }
     .main #contents li {
       list-style: none;

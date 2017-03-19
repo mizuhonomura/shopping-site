@@ -554,6 +554,9 @@ header{
       }
       #list_img {
         line-height: 1;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
       }
       li {
         list-style: none;
@@ -569,8 +572,38 @@ header{
       }
     }
     
-    @media (min-width: 550px) {
+    @media  (min-width: 550px) {
+      .display {
+        width: 100%;
+        height: auto;
+      }
+      #thumbnail {
+        margin: 0 auto;
+      }
+      #list_img {
+        line-height: 1;
+        padding: 0;
+        margin: 0 auto;
+      }
+      li {
+        list-style: none;
+        display: inline-block;
+        line-height: 1rem;
+        margin: 0px;
+      }
+      li img {
+        width: 75px;
+        height: 75px;
+        margin: 0px;
+        cursor: pointer;
+      }
+    }
+    
+    @media (min-width: 1200px) {
       
+      #image{
+        
+      }
       .clearfix:after { 
         display:block;
         clear:both;
@@ -579,16 +612,16 @@ header{
         content:".";
       }
       #display_img {
-        width: 410px;
-        height : 410px;
+        width: 70%;
+        height : auto;
         float: left;
       }
       #thumbnail {
         float: right;
         width: 30%;
       }
-      ul {
-        padding: 0;
+      #list_img {
+        padding: 0 0 0 15px;
         margin-bottom: 0;
       }
       li {
